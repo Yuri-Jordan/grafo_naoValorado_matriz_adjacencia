@@ -2,32 +2,38 @@ package grafo;
 
 public class Vertice<T> {
 
-	protected String nome;
-	protected T elemento;
+    String nome;
+    T elemento;
+    int index;
 
-	public Vertice(String nome,T elemento) {
-		this.nome = nome;
-		this.elemento = elemento;
-	}
+    public Vertice(String nome, T elemento, int index) {
+        this.nome = nome;
+        this.elemento = elemento;
+        this.index = index;
+    }
 
-	public String getnome() {
-		return nome;
-	}
+    public int getIndex(){
+        return this.index;
+    }
 
-	public void setnome(String nome) {
-		this.nome = nome;
-	}
+    public String getnome() {
+            return nome;
+    }
 
-	public T getelemento() {
-		return elemento;
-	}
+    public void setnome(String nome) {
+            this.nome = nome;
+    }
 
-	public void setelemento(T elemento) {
-		this.elemento = elemento;
-	}
+    public T getelemento() {
+            return elemento;
+    }
+
+    public void setelemento(T elemento) {
+            this.elemento = elemento;
+    }
 
 
-	public String intoString() {
-		return nome;
-	}
+    public String intoString() {
+            return nome;
+    }
 }
